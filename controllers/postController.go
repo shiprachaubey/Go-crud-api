@@ -4,9 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"go-crud-api/models"
-
-	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"                   // ✅ Keep this
+	"github.com/yourusername/go-crud-api/models" // ✅ CORRECT: Import models
 )
 
 var posts = []models.Post{
